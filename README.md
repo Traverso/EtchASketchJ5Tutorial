@@ -1,13 +1,13 @@
 # Etch A Sketch with Johnny-Five
 ### Overview
 
-This tutorial teach you how to build an electronic version of the classical [Etch A Sketch mechanical drawing toy](http://en.wikipedia.org/wiki/Etch_A_Sketchi)
+This tutorial teach you how to build an electronic version of the classical [Etch A Sketch mechanical drawing toy](http://en.wikipedia.org/wiki/Etch_A_Sketchi).
 
 To control our hardware, we will be using JavaScript. That's right the same ubiquitous programming language you probably know from your browser.
 
 [Johnny-Five](http://johnny-five.org) is currently the premier JavaScript Programming Framework for interacting with microcontrollers and hardware.
 
-Make no mistake this is not a case of "I want to play with hardware but I'm only willing to do it in my own petty language".
+Make no mistake this is not a case of _"I want to play with hardware but I'm only willing to do it in my own petty language"_.
 
 Johnny-Five offers a great API and abstraction layer that outclass current alternatives based on its own merits.
 
@@ -69,7 +69,7 @@ From the command line run: `npm install johnny-five`
 
 Then run: `npm install oled-js`, to install [@noopkat's](https://twitter.com/noopkat) [OLED library](https://www.npmjs.com/package/oled-js).
 
-If this is the first time you try Johnny-Five, [do the "blinking-light" example](http://johnny-five.io/examples/)</a> and come back.
+If this is the first time you try Johnny-Five, [go do the "blinking-light" example](http://johnny-five.io/examples/)</a> and come back.
 
 Create a new directory for your project, and add a file *screenTest.js*.
 
@@ -98,11 +98,11 @@ board.on("ready",function(){
 ```
 
 Connect the Arduino to your computer and run:  `node screenTest.js`.
-If everything went fine your OLED screen will look like this:
+If everything went fine, your OLED screen should display a border rectangle like this:
 
 <img src="tutorial/OLEDRect.png" width="100%" />
 
-If you want to learn more about the [oled-js library](https://www.npmjs.com/package/oled-js), spend some time playing with the [API](https://www.npmjs.com/package/oled-js) and drawing shapes and rendering text on your new fancy screen.
+If you want to learn more about the [oled-js library](https://www.npmjs.com/package/oled-js), spend some time playing with the [API](https://www.npmjs.com/package/oled-js), drawing shapes and rendering text on your new fancy screen.
      
 
 ### Hook up and test the potentiometers
@@ -153,7 +153,13 @@ Connect your button to pin two on the Arduino. Make a copy of *potTest.js* and c
 to test your button.
       
 ```
-t
+
+var clearButton = new five.Button(2);
+
+clearButton.on("down",function(){
+  console.log("clear the display");
+});
+
 ```
 
 ### Putting it all together
@@ -264,29 +270,8 @@ I hope this project whet your appetite for more hardware hacking and JS programm
       Have fun and share your projects!
 
 
+### Contributing
+Feel free to create pull request for simple typos or grammar improvements.
 
-
-
-
-
-
-    
-
-
-
-
-
-	 
-
-
-
-
-
-
- 
-
-	
-
-
-
-
+### License
+Copyright (c) 2015, Ronald Jaramillo ronald@burningservos.com Licensed under the MIT license.
