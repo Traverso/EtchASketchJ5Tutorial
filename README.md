@@ -1,4 +1,9 @@
 # Etch A Sketch with Johnny-Five
+
+https://www.youtube.com/watch?v=FB9eVFAG59U
+[![Demo](tutorial/youtube.png)](https://www.youtube.com/watch?v=FB9eVFAG59U)<br/>
+[YouTube Demo Video](https://www.youtube.com/watch?v=FB9eVFAG59U)
+
 ### Overview
 
 This tutorial teach you how to build an electronic version of the classical [Etch A Sketch mechanical drawing toy](http://en.wikipedia.org/wiki/Etch_A_Sketchi).
@@ -271,7 +276,7 @@ I hope this project whet your appetite for more hardware hacking and JS programm
 
 
 ### Contributing
-Feel free to create pull request for simple typos or grammar improvements.
+All the files for this tutorial are in the repo, feel free to create pull request for simple typos or grammar improvements.
 
 ### License
 Copyright (c) 2015, Ronald Jaramillo ronald@burningservos.com Licensed under the MIT license.
