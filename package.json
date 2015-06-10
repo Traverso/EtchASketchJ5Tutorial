@@ -1,0 +1,17 @@
+{
+  "name": "etch-a-sketch-j5",
+  "version": "0.0.1",
+  "description": "Tutorial to build an electronic version of the classical Etch A Sketch with Johnny-Five",
+  "main": "etchASketchJ5.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Johnny-Five",
+    "Oled-js",
+    "tutorial",
+    "toy"
+  ],
+  "author": "Ronald Jaramillo",
+  "license": "MIT"
+}
